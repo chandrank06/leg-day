@@ -1,0 +1,139 @@
+.bebas-neue-regular {
+  font-family: bebas-neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  height: 120vh;
+  background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%)
+    no-repeat;
+  overflow-x: hidden;
+}
+.cartIcon {
+  background: url(./assets/cart.svg) no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin: 30% 0 0 25%;
+}
+
+.trasparentParallelogramTop {
+  background: transparent;
+  width: 17%;
+  height: 20%;
+  position: absolute;
+  border: 1px solid #4a4a4a;
+  z-index: 1;
+  transform: skew(20deg) translate(260%, -20%);
+  top: 0;
+}
+
+.orangeStripBig {
+  background: #f24b4b;
+  width: 20%;
+  height: 100vh;
+  transform: skew(20deg, 0deg) translate(300%, 0%);
+  position: absolute;
+  top: 0;
+}
+.orangeStripBig::before {
+  content: "";
+  position: absolute;
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(50%);
+  right: 0;
+  top: 0;
+  transition: top 1s cubic-bezier(0.32, 0.48, 0, 0.94);
+}
+.orangeStripBig::after {
+  content: "";
+  position: absolute;
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
+  transition: bottom 1s cubic-bezier(0.32, 0.48, 0, 0.94);
+}
+.orangeStripBig:hover::before {
+  top: 90%;
+}
+.orangeStripBig:hover::after {
+  bottom: 90%;
+}
+.heroImg {
+  transition: transform 2s ease;
+}
+.heroImg:hover {
+  transform: scale(0.95);
+}
+.greyStripBig {
+  background: #4a4a4a;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  right: 18%;
+  transform-origin: center;
+  width: 2%;
+  height: 100vh;
+  transform: skew(20deg, 0deg) translate(265%, 0%);
+  top: 0;
+}
+
+.x-Mark {
+  background: url("./assets/x-mark.svg") no-repeat;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  transition: transform 2s ease;
+}
+.socialSection {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -2%;
+  top: 50%;
+  align-items: center;
+}
+.facebookLogo {
+  background: url(./assets/facebookLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.instagramLogo {
+  background: url(./assets/instagramLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.twitterLogo {
+  background: url(./assets/twitterLogo.svg) no-repeat !important;
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(90deg);
+}
+.transparentTextOnLeft {
+  z-index: -1;
+  position: absolute;
+  transform: rotate(-90deg);
+  background: none;
+  opacity: 0.1;
+  color: #f3c9c9;
+  -webkit-text-stroke: red;
+  -webkit-text-stroke-width: 0.09rem;
+  font-size: 20rem;
+  top: 30%;
+  left: -12%;
+}

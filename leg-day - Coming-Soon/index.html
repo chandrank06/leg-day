@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fitness</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/sig1wjs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bebas-neue-regular">
+    <div class="container m-auto">
+      <header>
+        <nav class="w-full">
+          <div class="flex content-center w-full mt-6">
+            <div class="content-center">
+              <img class="w-10 h-10 mr-4" src="./assets/logo.png" alt="logo" />
+            </div>
+            <div
+              class="text-3xl font-normal text-left content-center"
+              style="
+                line-height: 38px;
+                letter-spacing: 0.08em;
+                text-align: left;
+                color: #212121;
+                text-wrap: nowrap;
+              "
+            >
+              leg day
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="flex">
+        <div class="trasparentParallelogramTop"></div>
+        <div class="orangeStripBig"></div>
+        <div class="greyStripBig">
+          <div
+            class="text-2xl text-white pt-2x"
+            style="transform: rotate(90deg)"
+          >
+            you’re FEARLESS - you’re FEARLESS - you’re FEARLESS - you’re
+            FEARLESS - you’re FEARLESS - you’re FEARLESS - you’re FEARLESS -
+            you’re FEARLESS - you’re FEARLESS - you’re FEARLESS - you’re
+            FEARLESS - you’re FEARLESS - you’re FEARLESS - you’re FEARLESS -
+            you’re FEARLESS - you’re FEARLESS
+          </div>
+        </div>
+
+        <div
+          class="x-Mark"
+          style="right: 10%; top: 55%; transform: rotate(0deg) scale(0.8)"
+        ></div>
+        <div
+          class="x-Mark"
+          style="right: 9%; top: 60%; transform: rotate(-365deg) scale(0.8)"
+        ></div>
+        <div
+          class="x-Mark"
+          style="right: 8%; top: 67%; transform: rotate(0deg) scale(0.8)"
+        ></div>
+
+        <div class="w-1/2 mt-20">
+          <div
+            class="bebas-neue-regular text-8xl font-normal text-left"
+            style="line-height: 130px; color: #212121"
+          >
+            Coming Soon
+          </div>
+          <h2>Launching on <span style="color: #f24b4b" class="text-8xl">21 Oct,2024</span></h2>
+          <!-- Display the countdown timer in an element -->
+          <h2>
+            Countdown
+            <span id="demo" style="color: #f24b4b" class="text-8xl"></span>
+          </h2>
+          <div class="transparentTextOnLeft uppercase bebas-neue-regular">
+            Fitness
+          </div>
+        </div>
+        <div class="w-1/2">
+          <img
+            class="heroImg"
+            src="./assets/heroimg.png"
+            alt="mainimg"
+            style="width: 30%; position: absolute; top: 17%; right: 13%"
+          />
+        </div>
+      </main>
+      <div style="color: #212121" class="py-12 uppercase">
+        <p
+          class="bebas-neue-regular pb-6"
+          style="
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 31.2px;
+            letter-spacing: 4px;
+            text-align: left;
+          "
+        >
+          what you get
+        </p>
+        <div class="flex">
+          <div
+            class="oswald-font text-base flex"
+            style="
+              font-weight: 600;
+              line-height: 26px;
+              letter-spacing: 2px;
+              text-align: left;
+              align-items: center;
+              width: 15%;
+            "
+          >
+            <img
+              class="mr-4"
+              src="./assets/plan.png"
+              alt=""
+              style="width: 2.5rem; height: 3.5rem"
+            />
+            <p class="">Custom curated fitness plan</p>
+          </div>
+          <div
+            class="oswald-font text-base flex"
+            style="
+              font-weight: 600;
+              line-height: 26px;
+              letter-spacing: 2px;
+              text-align: left;
+              align-items: center;
+              width: 22%;
+            "
+          >
+            <img
+              class="mx-4"
+              src="./assets/strong.png"
+              alt=""
+              style="width: 2.5rem; height: 3.5rem"
+            />
+            <p class="">
+              rehab, crossfit,weight loss, strength training and more
+            </p>
+          </div>
+          <div
+            class="oswald-font text-base flex"
+            style="
+              font-weight: 600;
+              line-height: 26px;
+              letter-spacing: 2px;
+              text-align: left;
+              align-items: center;
+              width: 15%;
+            "
+          >
+            <img
+              class="mx-4"
+              src="./assets/training.png"
+              alt=""
+              style="width: 2.5rem; height: 3.5rem"
+            />
+            <p class="">stellar personal trainers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 21, 2024 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+</html>
