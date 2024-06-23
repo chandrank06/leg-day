@@ -1,0 +1,126 @@
+.orange-font {
+  color: var(--orage-color);
+}
+.black-font {
+  color: var(--black-font);
+}
+
+.trasparentParallelogramTop {
+  background: transparent;
+  width: 17%;
+  height: 20%;
+  position: absolute;
+  border: 1px solid #4a4a4a;
+  z-index: 1;
+  transform: skew(20deg) translate(260%, -20%);
+  top: 0;
+}
+
+.orangeStripBig {
+  background: #f24b4b;
+  width: 20%;
+  height: 100%;
+  transform: skew(20deg, 0deg) translate(300%, 0%);
+  position: absolute;
+  top: 0;
+}
+.orangeStripBig::before {
+  content: "";
+  position: absolute;
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(50%);
+  right: 0;
+  top: 0;
+  transition: top 1s cubic-bezier(0.32, 0.48, 0, 0.94);
+}
+.orangeStripBig::after {
+  content: "";
+  position: absolute;
+  background: #4a4a4a;
+  width: 10%;
+  height: 10%;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
+  transition: bottom 1s cubic-bezier(0.32, 0.48, 0, 0.94);
+}
+/* .orangeStripBig:hover::before {
+  top: 90%;
+}
+.orangeStripBig:hover::after {
+  bottom: 90%;
+} */
+.heroImg {
+  transform: scale(1);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.greyStripBig {
+  background: #4a4a4a;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  right: 13%;
+  transform-origin: center;
+  width: 2%;
+  height: 100%;
+  transform: skew(20deg, 0deg) translate(265%, 0%);
+  top: 0;
+}
+.greyStripBig div {
+  transform: rotate(90deg);
+}
+.transparentTextOnLeft {
+  z-index: -1;
+  position: absolute;
+  transform: rotate(-90deg);
+  background: none;
+  opacity: 0.1;
+  color: #f3c9c9;
+  -webkit-text-stroke: red;
+  -webkit-text-stroke-width: 0.09rem;
+  top: 50%;
+  left: -10%;
+}
+.ld-services {
+  border: 1px solid var(--orage-color);
+}
+.ld-highlight-border-bottom {
+  border-bottom: 5px solid var(--orage-color);
+}
+
+@media (max-width: 768px) {
+  .orangeStripBig,
+  .greyStripBig {
+    height: 80%;
+  }
+  .greyStripBig {
+    right: 15%;
+    width: 5%;
+  }
+  .trasparentParallelogramTop {
+    height: 10%;
+  }
+  .transparentTextOnLeft {
+    left: -25%;
+  }
+}
+@media (max-width: 640px) {
+  .orangeStripBig,
+  .greyStripBig {
+    height: 50%;
+  }
+  .greyStripBig {
+    right: 15%;
+    width: 5%;
+  }
+  .trasparentParallelogramTop {
+    height: 10%;
+  }
+  .transparentTextOnLeft {
+    left: -50%;
+  }
+}

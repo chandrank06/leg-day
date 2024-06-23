@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+  --orage-color: #f24b4b;
+  --black-font: #4a4a4a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+  }
+}
+body {
+  height: 100%;
+  background: linear-gradient(45deg, #f24b4b -105%, #efefef 80%, #f24b4b 125%)
+    no-repeat;
+  overflow-x: hidden;
+}

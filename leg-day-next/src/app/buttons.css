@@ -1,0 +1,17 @@
+.ld-button-blue {
+  text-align: left;
+  background: #3314fe;
+  padding: 20px 32px 20px 32px;
+  gap: 10px;
+  color: #ffffff;
+  box-shadow: 1px 1px 5px #212121;
+}
+.ld-button-orange {
+  text-align: left;
+  background: linear-gradient(0deg, #f24b4b, #f24b4b),
+    linear-gradient(0deg, #f24b4b, #f24b4b);
+  padding: 20px 32px 20px 32px;
+  gap: 10px;
+  color: #ffffff;
+  box-shadow: 1px 1px 5px #212121;
+}
